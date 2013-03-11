@@ -1,0 +1,19 @@
+Package: nordklimdata1
+Type: Package
+Title: Dataset for climate analysis with data from the Nordic region
+Version: 1.0
+Date: 2013-03-10
+Author: Jose' Gama
+Maintainer: Jose' Gama <jgama@abo.fi>
+Description: Nordklim data set 1.0
+        The Nordklim dataset is a unique and useful achievement for climate analysis. It includes
+        observations of twelve different climate elements from more than 100 stations in the Nordic
+        region. It covers a time span for more than 100 years.
+        AUTHORS:
+        Heikki Tuomenvirta, Achim Drebs, Eirik Forland, Ole Einar Tveito, Hans
+        Alexandersson, Ellen Vaarby Laursen and Trausti J\'onsson.
+        PROJECT CONTRACTORS:
+        NORDKLIM/NORDMET on behalf of the National meteorological services in
+        Denmark (DMI), Finland (FMI), Iceland (VI), Norway (DNMI) and Sweden (SMHI)
+License: GPL (>= 3)
+Depends: R (>= 2.7.0)
