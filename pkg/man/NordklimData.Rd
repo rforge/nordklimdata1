@@ -73,14 +73,14 @@ str(avgNordk)
 DanavgNordk <- avgNordk[which(avgNordk$CountryCode=='DK' & avgNordk$ClimateElement==101),c('FirstYear','YrAvg','NordklimNumber')]
 p <- unique(DanavgNordk$NordklimNumber)
 for (Dp in p) { plot(DanavgNordk[which(DanavgNordk$NordklimNumber==Dp),c('FirstYear','YrAvg')],type='l',col=( which(Dp==p)),
-xlim=c(min(DanavgNordk$FirstYear), max(DanavgNordk$FirstYear)),ylim=c(60,120)); par(new=T)}
+xlim=c(min(DanavgNordk$FirstYear), max(DanavgNordk$FirstYear)),ylim=c(60,120)); if (Dp != p[length(p)]) par(new=T)}
 # average each country
 avgNordkCountry=aggregate(YrAvg ~ CountryCode+ClimateElement+FirstYear , data = avgNordk, function(x) {x[x==-9999]<-NA;mean(x,na.rm = TRUE)})
 str(avgNordkCountry)
 # plot the temperatures (mean of all stations) for each country
 for (country in countries) { plot(avgNordkCountry[which(avgNordkCountry$CountryCode==country & avgNordkCountry$ClimateElement==101),
 c('FirstYear','YrAvg')],type='l',col=( which(country==countries)),xlim=c(minFirstYear, maxFirstYear),ylim=c(0,120),
-main='Mean of yearly means of all stations for each country',xlab='Years',ylab='Mean temperature'); par(new=T)}
+main='Mean of yearly means of all stations for each country',xlab='Years',ylab='Mean temperature'); if (country != countries[length(countries)]) par(new=T)}
 legend('topleft', legend = countries, col=1:5, pch=1, lty=1, merge=TRUE)
 }
 }
