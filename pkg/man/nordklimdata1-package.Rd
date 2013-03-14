@@ -11,11 +11,7 @@ station network covers all five Nordic countries, including data from the Faeroe
 Bjornoya and Svalbard. There are seven monthly climatic elements describing temperature,
 two on precipitation and one on air pressure, cloud cover and snow cover.
 
-AUTHORS:
-Heikki Tuomenvirta, Achim Drebs, Eirik Forland, Ole Einar Tveito, Hans
-Alexandersson, Ellen Vaarby Laursen and Trausti Jo'nsson.
-
-PROJECT CONTRACTORS:
+Project contractors:
 NORDKLIM/NORDMET on behalf of the National meteorological services in
 Denmark (DMI), Finland (FMI), Iceland (VI), Norway (DNMI) and Sweden (SMHI)
 }
@@ -29,9 +25,7 @@ License: \tab GPL (>= 3)\cr
 }
 }
 \author{
-Author: Jose' Gama
-
-Maintainer: jgama@abo.fi
+Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),person(given = "Achim", family = "Drebs", role = "aut"),person(given = "Eirik", family = "Forland", role = "aut"),person(given = "Ole", family = "Einar Tveito", role = "aut"),person(given = "Hans", family = "Alexandersson", role = "aut"),person(given = "Ellen", family = "Vaarby Laursen", role = "aut"),person(given = "Trausti", family = "Jonsson", role = "aut"),person(given = "Jose'", family = "Gama", role = c("cre"),email = "jgama@abo.fi")) 
 }
 \source{\url{http://www.smhi.se/hfa_coord/nordklim}}
 \references{

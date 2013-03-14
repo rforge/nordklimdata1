@@ -1,0 +1,18 @@
+bibentry( bibtype = "Manual",
+ title = "{nordklimdata1}: Dataset for climate analysis with data from the Nordic region",
+ author = "Heikki Tuomenvirta [aut], Achim Drebs [aut], Eirik Forland [aut], Ole Einar Tveito [aut],Hans Alexandersson [aut], Ellen Vaarby Laursen [aut], Trausti Jonsson [aut], Jose Gama [cre]",
+ year = "2013",
+ note = "R package version 1.0",
+ url = "http://CRAN.R-project.org/package=nordklimdata1",
+ key = "nordklimdata1-package"
+ )
+  bibentry( bibtype = "techreport",
+ author = "Heikki Tuomenvirta [aut], Achim Drebs [aut], Eirik Forland [aut], Ole Einar Tveito [aut],Hans Alexandersson [aut], Ellen Vaarby Laursen [aut], Trausti Jonsson [aut]",
+    title   = "Nordklim dataset 1.0 - description and illustrations",
+    institution = "Norwegian meteorological institute",
+    number   = "08/01 KLIMA",
+    year    = "2001",
+ url = "http://www.smhi.se/hfa_coord/nordklim/",
+ key = "nordklimdata1-techreport"
+ )
+
