@@ -11,7 +11,6 @@ Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),
     person(given = "Hans", family = "Alexandersson", role = "aut"),
     person(given = "Ellen", family = "Vaarby Laursen", role = "aut"),
     person(given = "Trausti", family = "Jónsson", role = "aut"),
-    person(given = "Göran", family = "Högnäs", role = "ths"),
     person(given = "José", family = "Gama", role = "cre",email = "jgama@abo.fi")) 
 Description: Nordklim data set 1.0
     The Nordklim dataset is a unique and useful achievement for climate analysis. It includes

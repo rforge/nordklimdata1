@@ -1,6 +1,6 @@
 bibentry( bibtype = "Manual",
  title = "{nordklimdata1}: Dataset for climate analysis with data from the Nordic region",
- author = "Heikki Tuomenvirta [aut], Achim Drebs [aut], Eirik F{\o}rland [aut], Ole Einar Tveito [aut],Hans Alexandersson [aut], Ellen Vaarby Laursen [aut], Trausti J\'{o}nsson [aut], G\"{o}ran H\"{o}gn\"{a}s [ths], Jos\'{e} Gama [cre]",
+ author = "Heikki Tuomenvirta [aut], Achim Drebs [aut], Eirik F{\o}rland [aut], Ole Einar Tveito [aut],Hans Alexandersson [aut], Ellen Vaarby Laursen [aut], Trausti J\'{o}nsson [aut], Jos\'{e} Gama [cre]",
  year = "2013",
  note = "R package version 1.0",
  url = "http://CRAN.R-project.org/package=nordklimdata1",
