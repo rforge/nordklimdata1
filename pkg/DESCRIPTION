@@ -1,9 +1,9 @@
-Encoding: UTF-8
 Package: nordklimdata1
 Type: Package
 Title: Dataset for climate analysis with data from the Nordic region
 Version: 1.0
 Date: 2013-03-10
+Encoding: UTF-8
 Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),
     person(given = "Achim", family = "Drebs", role = "aut"),
     person(given = "Eirik", family = "Førland", role = "aut"),
