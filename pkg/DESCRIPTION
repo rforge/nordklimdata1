@@ -1,8 +1,7 @@
 Package: nordklimdata1
 Type: Package
-Title: Dataset for climate analysis with data from the Nordic region
-Version: 1.1
-Date: 2013-03-10
+Title: Dataset for Climate Analysis with Data from the Nordic Region
+Version: 1.2
 Encoding: UTF-8
 Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),
     person(given = "Achim", family = "Drebs", role = "aut"),
@@ -11,7 +10,7 @@ Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),
     person(given = "Hans", family = "Alexandersson", role = "aut"),
     person(given = "Ellen", family = "Vaarby Laursen", role = "aut"),
     person(given = "Trausti", family = "Jónsson", role = "aut"),
-    person(given = "José", family = "Gama", role = "cre",email = "jgama@abo.fi")) 
+    person(given = "Jose", family = "Gama", role = "cre",email = "rxprtgama@gmail.com")) 
 Description: Nordklim data set 1.0
     The Nordklim dataset is a unique and useful achievement for climate analysis. It includes
     observations of twelve different climate elements from more than 100 stations in the Nordic
