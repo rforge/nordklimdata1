@@ -45,9 +45,10 @@ Information about the Nordklim stations and climate element numbers.
   }
 }
 \details{
-The station catalogue has five columns with station information (station name, height
-at sea level, country code, NORDKLIM number and Lat./Long.) followed by 24 columns, two for each
-climate element number, the first is the first year of the dataset and the second is the last year.
+The station catalogue has five columns with station information (station name, 
+height at sea level, country code, NORDKLIM number and Lat./Long.) followed 
+by 24 columns, two for each climate element number, the first is the first 
+year of the dataset and the second is the last year.
 }
 \source{\url{http://www.smhi.se/hfa_coord/nordklim}}
 \references{
@@ -63,15 +64,23 @@ length(NordklimStationCatalogue$Nordklim.number)
 # in 5 Nordic countries
 length(NordklimStationCatalogue$Country)
 # how many stations per country?
-table(NordklimStationCatalogue$Country,dnn = list("Number of stations per country"))
+table(NordklimStationCatalogue$Country,dnn = 
+list("Number of stations per country"))
 # how many climate elements recorded per station?
-climElSta <- rowSums(sign(NordklimStationCatalogue[,c('X101','X111','X112','X113','X121','X122','X123','X401','X601','X602','X701','X801')]), na.rm = TRUE)
-barplot(climElSta,ylab='Climate elements',xlab='Stations',main='Climate elements recorded per station')
+climElSta <- rowSums(sign(NordklimStationCatalogue[,c('X101','X111','X112',
+'X113','X121','X122','X123','X401','X601','X602','X701','X801')]), 
+na.rm = TRUE)
+barplot(climElSta,ylab='Climate elements',xlab='Stations',
+main='Climate elements recorded per station')
 # how many stations per climate element?
-staClimEl <- colSums(sign(NordklimStationCatalogue[,c('X101','X111','X112','X113','X121','X122','X123','X401','X601','X602','X701','X801')]), na.rm = TRUE)
-barplot(staClimEl,xlab='Climate element',ylab='Stations',main='Stations per climate element')
-# how many stations have 1,2,3, ..., 12 climate elements? (same as Fig. 2 from Nordklim dataset 1.0 - description and illustrations)
-barplot(table(climElSta),xlab='Climate element',ylab='Stations',main='Number of stations as a function of number of climatic elements')
+staClimEl <- colSums(sign(NordklimStationCatalogue[,c('X101','X111','X112','X113','X121',
+'X122','X123','X401','X601','X602','X701','X801')]), na.rm = TRUE)
+barplot(staClimEl,xlab='Climate element',ylab='Stations',
+main='Stations per climate element')
+# how many stations have 1,2,3, ..., 12 climate elements? 
+# (same as Fig. 2 from Nordklim dataset 1.0 - description and illustrations)
+barplot(table(climElSta),xlab='Climate element',ylab='Stations',
+main='Number of stations as a function of number of climatic elements')
 }
 }
 \keyword{datasets}

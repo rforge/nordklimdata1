@@ -5,7 +5,8 @@
 The Nordklim Dataset
 }
 \description{
-The NORDKLIM data set - monthly data for 7 climatic elements from 114 stations in 5 Nordic countries.
+The NORDKLIM data set - monthly data for 7 climatic elements from 114 stations 
+in 5 Nordic countries.
 }
 \usage{data(NordklimData)}
 \format{
@@ -30,9 +31,10 @@ The NORDKLIM data set - monthly data for 7 climatic elements from 114 stations i
   }
 }
 \details{
-The NORDKLIM data set has 16 columns, the first three columns are the Nordklim number, climate
-element number and first year of the dataset, the next 12 columns are twelve months of readings,
-from January to December and the last column is the country code.
+The NORDKLIM data set has 16 columns, the first three columns are the Nordklim 
+number, climate element number and first year of the dataset, the next 12 
+columns are twelve months of readings, from January to December and the last 
+column is the country code.
 Monthly climatic elements in the NORDKLIM data set:
 \tabular{llll}{
 Element number \tab Climatic element \tab Unit \tab Abbreviation\cr
@@ -66,21 +68,33 @@ minFirstYear<- min(NordklimData$FirstYear)
 maxFirstYear<- max(NordklimData$FirstYear)
 allyears <- min(NordklimData$FirstYear):max(NordklimData$FirstYear)
 # get the yearly average of all records
-avgNordk <- cbind(NordklimData[,c('CountryCode','ClimateElement','FirstYear','NordklimNumber')], 
-YrAvg=apply(NordklimData[,c('January','February','March','April','May','June','July','August','September','October','November','December')],1,function(x) {x[x==-9999]<-NA;mean(x,na.rm = TRUE)}))
+avgNordk <- cbind(NordklimData[,c('CountryCode','ClimateElement','FirstYear',
+'NordklimNumber')], 
+YrAvg=apply(NordklimData[,c('January','February','March','April','May','June',
+'July','August','September', 'October','November','December')],1,function(x) 
+{x[x==-9999]<-NA;mean(x,na.rm = TRUE)}))
 str(avgNordk)
-# plot the Danish mean temperatures for its 5 stations (for a quick visual inspection, no need for labels or legends)
-DanavgNordk <- avgNordk[which(avgNordk$CountryCode=='DK' & avgNordk$ClimateElement==101),c('FirstYear','YrAvg','NordklimNumber')]
+# plot the Danish mean temperatures for its 5 stations (for a quick visual 
+# inspection, no need for labels or legends)
+DanavgNordk <- avgNordk[which(avgNordk$CountryCode=='DK' & 
+avgNordk$ClimateElement==101),c('FirstYear','YrAvg','NordklimNumber')]
 p <- unique(DanavgNordk$NordklimNumber)
-for (Dp in p) { plot(DanavgNordk[which(DanavgNordk$NordklimNumber==Dp),c('FirstYear','YrAvg')],type='l',col=( which(Dp==p)),
-xlim=c(min(DanavgNordk$FirstYear), max(DanavgNordk$FirstYear)),ylim=c(60,120)); if (Dp != p[length(p)]) par(new=T)}
+for (Dp in p) { plot(DanavgNordk[which(DanavgNordk$NordklimNumber==Dp),
+c('FirstYear','YrAvg')],type='l',col=( which(Dp==p)),
+xlim=c(min(DanavgNordk$FirstYear), max(DanavgNordk$FirstYear)),
+ylim=c(60,120)); if (Dp != p[length(p)]) par(new=T)}
 # average each country
-avgNordkCountry=aggregate(YrAvg ~ CountryCode+ClimateElement+FirstYear , data = avgNordk, function(x) {x[x==-9999]<-NA;mean(x,na.rm = TRUE)})
+avgNordkCountry=aggregate(YrAvg ~ CountryCode+ClimateElement+FirstYear , 
+data = avgNordk, function(x) {x[x==-9999]<-NA;mean(x,na.rm = TRUE)})
 str(avgNordkCountry)
 # plot the temperatures (mean of all stations) for each country
-for (country in countries) { plot(avgNordkCountry[which(avgNordkCountry$CountryCode==country & avgNordkCountry$ClimateElement==101),
-c('FirstYear','YrAvg')],type='l',col=( which(country==countries)),xlim=c(minFirstYear, maxFirstYear),ylim=c(0,120),
-main='Mean of yearly means of all stations for each country',xlab='Years',ylab='Mean temperature'); if (country != countries[length(countries)]) par(new=T)}
+for (country in countries) { plot(avgNordkCountry[
+which(avgNordkCountry$CountryCode==country & avgNordkCountry$ClimateElement==101),
+c('FirstYear','YrAvg')],type='l',col=( which(country==countries)),
+xlim=c(minFirstYear, maxFirstYear),ylim=c(0,120),
+main='Mean of yearly means of all stations for each country',
+xlab='Years',ylab='Mean temperature'); 
+if (country != countries[length(countries)]) par(new=T)}
 legend('topleft', legend = countries, col=1:5, pch=1, lty=1, merge=TRUE)
 }
 }

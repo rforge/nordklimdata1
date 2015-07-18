@@ -6,10 +6,11 @@
 Nordklim data set 1.0
 }
 \description{
-The NORDKLIM data set contains close to 70 000 years of monthly data from 114 stations. The
-station network covers all five Nordic countries, including data from the Faeroe Islands, Jan Mayen,
-Bjornoya and Svalbard. There are seven monthly climatic elements describing temperature,
-two on precipitation and one on air pressure, cloud cover and snow cover.
+The NORDKLIM data set contains close to 70 000 years of monthly data from 114 
+stations. The station network covers all five Nordic countries, including 
+data from the Faeroe Islands, Jan Mayen, Bjornoya and Svalbard. There are 
+seven monthly climatic elements describing temperature, two on precipitation 
+and one on air pressure, cloud cover and snow cover.
 
 Project contractors:
 NORDKLIM/NORDMET on behalf of the National meteorological services in
@@ -25,7 +26,14 @@ License: \tab GPL (>= 3)\cr
 }
 }
 \author{
-Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),person(given = "Achim", family = "Drebs", role = "aut"),person(given = "Eirik", family = "Forland", role = "aut"),person(given = "Ole", family = "Einar Tveito", role = "aut"),person(given = "Hans", family = "Alexandersson", role = "aut"),person(given = "Ellen", family = "Vaarby Laursen", role = "aut"),person(given = "Trausti", family = "Jonsson", role = "aut"),person(given = "Jose'", family = "Gama", role = c("cre"),email = "jgama@abo.fi")) 
+Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),
+person(given = "Achim", family = "Drebs", role = "aut"),
+person(given = "Eirik", family = "Forland", role = "aut"),
+person(given = "Ole", family = "Einar Tveito", role = "aut"),
+person(given = "Hans", family = "Alexandersson", role = "aut"),
+person(given = "Ellen", family = "Vaarby Laursen", role = "aut"),
+person(given = "Trausti", family = "Jonsson", role = "aut"),
+person(given = "Jose'", family = "Gama", role = c("cre"),email = "jgama@abo.fi")) 
 }
 \source{\url{http://www.smhi.se/hfa_coord/nordklim}}
 \references{
