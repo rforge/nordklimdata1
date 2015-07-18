@@ -14,8 +14,8 @@ Authors@R: c(person(given = "Heikki", family = "Tuomenvirta", role = "aut"),
 Description: The Nordklim dataset 1.0 is a unique and useful achievement for climate 
     analysis. It includes observations of twelve different climate elements from 
     more than 100 stations in the Nordic region, in time span over 100 years.
-    The roject contractors were NORDKLIM/NORDMET on behalf of the National 
-    meteorological services in     Denmark (DMI), Finland (FMI), Iceland (VI), 
+    The project contractors were NORDKLIM/NORDMET on behalf of the National 
+    meteorological services in Denmark (DMI), Finland (FMI), Iceland (VI), 
     Norway (DNMI) and Sweden (SMHI).
 License: GPL (>= 3)
 Depends: R (>= 2.7.0)
